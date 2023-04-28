@@ -1,0 +1,39 @@
+<circuit animate="0" Simu_Step_nS="1000" reactStep="50" Speed_per="100" Speed_sps="1000000" type="simulide_0.4" noLinAcc="5">
+
+Unique  Id: Package-16: 
+Circuit Id: Package-16
+<item valLabelx="0" circRot="8.663069701447548e-299" labely="-20" Height="8" boardRot="-1e+06" SubcType="0" y="-140" x="-452" id="Package-16" labelx="0" boardPos="-1e+06,-1e+06" objectName="Package-16" itemtype="Package" circPos="0,0" vflip="1" Background="" Package_File="/Users/alicegiordano/Desktop/simulide.app/Contents/share/simulide/data" Logic_Symbol="true" Name="Package" valLabely="0" Show_id="true" rotation="0" hflip="1" Width="4" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: Ground-15: 
+Circuit Id: Ground-15
+<item valLabelx="0" circRot="0" labely="8" boardRot="-1e+06" y="-268" x="-240" id="Ground-15" labelx="-16" boardPos="-1e+06,-1e+06" objectName="Ground-15" itemtype="Ground" circPos="0,0" vflip="1" valLabely="0" Show_id="false" rotation="0" hflip="1" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: Rail-14: 
+Circuit Id: Rail-14
+<item valLabelx="-16" circRot="0" labely="-24" boardRot="-1e+06" y="-232" x="-356" id="Rail-14" labelx="-16" boardPos="-1e+06,-1e+06" objectName="Rail-14" itemtype="Rail" circPos="0,0" vflip="1" Show_Volt="true" valLabely="8" Show_id="false" Unit=" V" rotation="0" hflip="1" Voltage="5" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: Battery-13: 
+Circuit Id: Battery-13
+<item valLabelx="-10" circRot="2.920409439290702e-308" labely="-22" boardRot="-1e+06" y="-236" x="-432" id="Battery-13" labelx="-18" boardPos="-1e+06,-1e+06" objectName="Battery-13" itemtype="Battery" circPos="0,0" vflip="1" Show_Volt="true" valLabely="10" Show_id="false" rotation="0" hflip="1" Volts="5" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: Current Source-12: 
+Circuit Id: Current Source-12
+<item valLabelx="-26" circRot="1.1125885373413595e-306" labely="-80" boardRot="-1e+06" y="-308" Current="1" x="-356" id="Current Source-12" labelx="-40" boardPos="-1e+06,-1e+06" objectName="Current Source-12" itemtype="Current Source" circPos="0,0" vflip="1" Show_Amp="true" valLabely="10" Show_id="false" Unit=" A" rotation="0" hflip="1" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: Voltage Source-11: 
+Circuit Id: Voltage Source-11
+<item valLabelx="-26" circRot="0" labely="-80" boardRot="-1e+06" y="-312" x="-464" id="Voltage Source-11" labelx="-40" boardPos="-1e+06,-1e+06" objectName="Voltage Source-11" itemtype="Voltage Source" circPos="0,0" vflip="1" Show_Volt="true" valLabely="10" Show_id="false" Unit=" V" rotation="0" hflip="1" Voltage="5" valLabRot="0" labelrot="0" mainComp="false"/>
+
+Unique  Id: WaveGen-10: 
+Circuit Id: WaveGen-10
+<item valLabelx="-16" circRot="-4.2584909141032105e+40" labely="-24" boardRot="-1e+06" Duty_Square="50" y="-404" Out="false" x="-412" id="WaveGen-10" Freq="1000" labelx="-64" boardPos="-1e+06,-1e+06" objectName="WaveGen-10" itemtype="WaveGen" Quality="5" circPos="0,0" vflip="1" Wave_Type="0" Show_Volt="true" valLabely="8" Volt_Base="0" Show_id="false" Unit=" V" rotation="0" hflip="1" Voltage="5" valLabRot="0" labelrot="0" mainComp="false" Always_On="false"/>
+
+Unique  Id: Clock-9: 
+Circuit Id: Clock-9
+<item valLabelx="-16" circRot="0" labely="-24" boardRot="-1e+06" y="-448" Out="false" x="-372" id="Clock-9" Freq="1000" labelx="-64" boardPos="-1e+06,-1e+06" objectName="Clock-9" itemtype="Clock" circPos="0,0" vflip="1" Show_Volt="true" valLabely="8" Show_id="false" Unit=" V" rotation="0" hflip="1" Voltage="5" valLabRot="0" labelrot="0" mainComp="false" Always_On="false"/>
+
+Unique  Id: Fixed Voltage-8: 
+Circuit Id: Fixed Voltage-8
+<item valLabelx="-16" circRot="0" labely="-24" boardRot="-1e+06" y="-448" Out="false" x="-460" id="Fixed Voltage-8" labelx="-64" boardPos="-1e+06,-1e+06" objectName="Fixed Voltage-8" itemtype="Fixed Voltage" circPos="0,0" vflip="1" Show_Volt="true" valLabely="8" Show_id="false" Unit=" V" rotation="0" hflip="1" Voltage="5" valLabRot="0" labelrot="0" mainComp="false"/>
+ 
+</circuit>
