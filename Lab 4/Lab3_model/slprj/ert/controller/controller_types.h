@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'controller'.
  *
- * Model version                  : 3.69
+ * Model version                  : 3.71
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed May 31 13:55:50 2023
+ * C/C++ source code generated on : Wed May 31 14:31:36 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -31,6 +31,17 @@ typedef enum {
   Brake,
   Error
 } TransmissionState;
+
+#endif
+
+#ifndef DEFINED_TYPEDEF_FOR_WarningState_
+#define DEFINED_TYPEDEF_FOR_WarningState_
+
+typedef enum {
+  Ok = 0,                              /* Default value */
+  Warning,
+  ErrorSig
+} WarningState;
 
 #endif
 

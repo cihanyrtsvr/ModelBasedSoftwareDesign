@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'controller'.
  *
- * Model version                  : 3.69
+ * Model version                  : 3.71
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed May 31 13:55:50 2023
+ * C/C++ source code generated on : Wed May 31 14:31:36 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -59,8 +59,8 @@ extern void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
   *rtu_ThrottlePedalPosition, const TransmissionState
   *rtu_AutomaticTrasmissionSelecto, const real32_T *rtu_VehicleSpeed_km_h,
   real32_T *rty_TorqueRequest_Nm, TransmissionState
-  *rty_AutomaticTransmissionState, int32_T *rty_WarningState, B_controller_c_T
-  *localB, DW_controller_f_T *localDW);
+  *rty_AutomaticTransmissionState, WarningState *rty_WarningState,
+  B_controller_c_T *localB, DW_controller_f_T *localDW);
 
 /*-
  * The generated code includes comments that allow you to trace directly

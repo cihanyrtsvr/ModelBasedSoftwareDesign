@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'controller'.
  *
- * Model version                  : 3.69
+ * Model version                  : 3.71
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed May 31 13:55:50 2023
+ * C/C++ source code generated on : Wed May 31 14:31:36 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -44,15 +44,16 @@ void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
                 *rtu_ThrottlePedalPosition, const TransmissionState
                 *rtu_AutomaticTrasmissionSelecto, const real32_T
                 *rtu_VehicleSpeed_km_h, real32_T *rty_TorqueRequest_Nm,
-                TransmissionState *rty_AutomaticTransmissionState, int32_T
-                *rty_WarningState, B_controller_c_T *localB, DW_controller_f_T
+                TransmissionState *rty_AutomaticTransmissionState, WarningState *
+                rty_WarningState, B_controller_c_T *localB, DW_controller_f_T
                 *localDW)
 {
-  int64m_T tmp;
   int64m_T tmp_0;
+  int64m_T tmp_1;
   real_T rtb_CastToDouble;
-  int32_T rtb_Switch;
+  real_T tmp;
   int32_T rtb_Switch2;
+  int32_T rtb_Switch5;
   int32_T rtb_Transmission_State;
 
   /* DataTypeConversion: '<Root>/Cast To Double' */
@@ -199,9 +200,9 @@ void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
    *  Constant: '<Root>/Constant7'
    */
   if (*rtu_ThrottlePedalPosition > 1.0F) {
-    rtb_Switch = 2;
+    rtb_Switch5 = 2;
   } else {
-    rtb_Switch = 0;
+    rtb_Switch5 = 0;
   }
 
   /* End of Switch: '<Root>/Switch5' */
@@ -217,8 +218,8 @@ void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
    *  Switch: '<Root>/Switch4'
    */
   sLong2MultiWord(((rtb_Transmission_State - 2 == 0) || (rtb_Transmission_State ==
-    0)) && (floor(localB->TorqueRequest) != 0.0), &tmp_0.chunks[0U], 2);
-  sMultiWordShl(&tmp_0.chunks[0U], 2, 30U, &tmp.chunks[0U], 2);
+    0)) && (floor(localB->TorqueRequest) != 0.0), &tmp_1.chunks[0U], 2);
+  sMultiWordShl(&tmp_1.chunks[0U], 2, 30U, &tmp_0.chunks[0U], 2);
 
   /* Switch: '<Root>/Switch2' incorporates:
    *  Constant: '<Root>/Constant'
@@ -233,8 +234,20 @@ void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
   /* MinMax: '<Root>/Max' incorporates:
    *  Switch: '<Root>/Switch2'
    */
-  rtb_CastToDouble = fmax(fmax(sMultiWord2Double(&tmp.chunks[0U], 2, 0) *
-    1.862645149230957E-9, rtb_Switch2), rtb_Switch);
+  rtb_CastToDouble = fmax(fmax(sMultiWord2Double(&tmp_0.chunks[0U], 2, 0) *
+    1.862645149230957E-9, rtb_Switch2), rtb_Switch5);
+
+  /* DataTypeConversion: '<Root>/Data Type Conversion' */
+  tmp = floor(rtb_CastToDouble);
+  if (rtIsInf(tmp)) {
+    /* DataTypeConversion: '<Root>/Data Type Conversion2' */
+    *rty_WarningState = (WarningState)0;
+  } else {
+    /* DataTypeConversion: '<Root>/Data Type Conversion2' */
+    *rty_WarningState = (WarningState)(int32_T)fmod(tmp, 4.294967296E+9);
+  }
+
+  /* End of DataTypeConversion: '<Root>/Data Type Conversion' */
 
   /* Switch: '<Root>/Switch' */
   if (rtb_CastToDouble > 1.0) {
@@ -246,16 +259,6 @@ void controller(const boolean_T *rtu_BrakePedalPressed, const real32_T
   }
 
   /* End of Switch: '<Root>/Switch' */
-
-  /* DataTypeConversion: '<Root>/Data Type Conversion2' */
-  rtb_CastToDouble = floor(rtb_CastToDouble);
-  if (rtIsInf(rtb_CastToDouble)) {
-    *rty_WarningState = 0;
-  } else {
-    *rty_WarningState = (int32_T)(uint32_T)fmod(rtb_CastToDouble, 4.294967296E+9);
-  }
-
-  /* End of DataTypeConversion: '<Root>/Data Type Conversion2' */
 
   /* DataTypeConversion: '<Root>/Cast To Single' */
   *rty_TorqueRequest_Nm = (real32_T)localB->TorqueRequest;
