@@ -1,0 +1,79 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="TextComponent" CircId="TextComponent-41" mainComp="false" Show_id="false" Show_Val="false" Pos="-1552,-1024" rotation="0" hflip="1" vflip="1" label="TextComponent-41" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="true" Text="HFP" />
+
+<item itemtype="TextComponent" CircId="TextComponent-40" mainComp="false" Show_id="false" Show_Val="false" Pos="-1552,-1060" rotation="0" hflip="1" vflip="1" label="TextComponent-38" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="LFP" />
+
+<item itemtype="TextComponent" CircId="TextComponent-39" mainComp="false" Show_id="false" Show_Val="false" Pos="-1556,-992" rotation="0" hflip="1" vflip="1" label="TextComponent-38" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Error" />
+
+<item itemtype="TextComponent" CircId="TextComponent-38" mainComp="false" Show_id="false" Show_Val="false" Pos="-1560,-960" rotation="0" hflip="1" vflip="1" label="TextComponent-38" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Blinker" />
+
+<item itemtype="TextComponent" CircId="TextComponent-37" mainComp="false" Show_id="false" Show_Val="false" Pos="-1140,-1160" rotation="0" hflip="1" vflip="1" label="TextComponent-37" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="OutFlow" />
+
+<item itemtype="TextComponent" CircId="TextComponent-36" mainComp="false" Show_id="false" Show_Val="false" Pos="-1020,-1160" rotation="0" hflip="1" vflip="1" label="TextComponent-36" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" Text="Level" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-33" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-1100,-1068" rotation="0" hflip="1" vflip="1" label="Voltage Source-33" idLabPos="-40,-80" labelrot="0" valLabPos="-26,10" valLabRot="0" Running="true" Value_Volt="3.915 V" MaxValue="5 V" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-32" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-988,-1068" rotation="0" hflip="1" vflip="1" label="Voltage Source-32" idLabPos="-40,-80" labelrot="0" valLabPos="-26,10" valLabRot="0" Running="true" Value_Volt="4.235 V" MaxValue="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-17" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-1472,-1012" rotation="0" hflip="1" vflip="1" label="Resistor-17" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-16" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-1472,-1052" rotation="0" hflip="1" vflip="1" label="Resistor-16" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-14" mainComp="false" Show_id="false" Show_Val="false" Pos="-1412,-1012" rotation="-180" hflip="1" vflip="1" label="Led-14" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-1412,-1052" rotation="180" hflip="1" vflip="1" label="Led-12" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-1472,-956" rotation="0" hflip="1" vflip="1" label="Resistor-10" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-8" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-1472,-980" rotation="0" hflip="1" vflip="1" label="Resistor-8" idLabPos="-12,-20" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-1412,-980" rotation="-180" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-1412,-956" rotation="-180" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="0,0" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Subcircuit" CircId="Uno-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-1364,-1084" rotation="0" hflip="1" vflip="1" label="Arduino Uno-2" idLabPos="100,-21" labelrot="0" valLabPos="0,0" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="2_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="2_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" eeprom="92,192,0,0,129,192,0,0,127,192,0,0,125,192,0,0,123,192,0,0,121,192,0,0,119,192,0,0,117,192,0,0,115,192,0,0,113,192,0,0,111,192,0,0,109,192,0,0,107,192,0,0,191,194,0,0,103,192,0,0,101,192,0,0,96,198,0,0,97,192,0,0,12,148,221,8,12,148,15,9,91,192,0,0,89,192,0,0,87,192,0,0,85,192,0,0,83,192,0,0,81,192,0,0,0,0,0,8,0,2,1,0,0,3,4,7,0,0,0,0,0,0,0,0,1,2,4,8,16,32,64,128,1,2,4,8,16,32,1,2,4,8,16,32,4,4,4,4,4,4,4,4,2,2,2,2,2,2,3,3,3,3,3,3,0,0,0,0,37,0,40,0,43,0,0,0,0,0,36,0,39,0,42,0,52,9,17,36,31,190,207,239,216,224,222,191,205,191,17,224,160,224,177,224,224,231,243,225,2,192,5,144,13,146,170,51,177,7,217,247,34,224,170,227,177,224,1,192,29,146,160,52,178,7,225,247,16,224,205,229,208,224,4,192,33,151,254,1,14,148,176,9,204,53,209,7,201,247,244,210,12,148,182,9,123,207,207,147,223,147,136,35,65,240,235,1,129,80,122,214,153,131,136,131,223,145,207,145,8,149,251,1,17,130,16,130,249,207,15,147,31,147,139,1,156,1,131,224,54,149,39,149,23,149,7,149,138,149,209,247,6,92,30,79,70,47,71,112,33,224,48,224,249,1,2,192,238,15,255,31,74,149,226,247,175,1,248,1,32,129,36,35,203,1,1,150,33,17,2,192,144,224,128,224,31,145,15,145,8,149,15,147,31,147,139,1,156,1,131,224,54,149,39,149,23,149,7,149,138,149,209,247,103,112,129,224,144,224,1,192,136,15,106,149,234,247,248,1,230,92,254,79,32,129,69,43,49,244,128,149,130,35,128,131,31,145,15,145,8,149,130,43,250,207,207,146,223,146,239,146,255,146,207,147,223,147,107,1,124,1,96,224,142,224,200,22,209,4,225,4,241,4,136,244,142,224,140,13,95,214,230,1,33,150,174,1,199,1,182,1,200,223,206,1,223,145,207,145,255,144,239,144,223,144,207,144,8,149,140,45,239,207,136,35,65,240,129,80,104,47,112,224,144,224,128,224,80,224,64,224,180,207,8,149,97,17,1,192,65,198,97,48,233,243,98,224,251,207,102,35,17,240,97,224,117,198,96,224,253,207,252,1,145,224,64,145,73,1,80,145,74,1,96,145,75,1,112,145,76,1,69,43,70,43,71,43,9,240,144,224,145,131,8,149,207,146,223,146,239,146,255,146,15,147,31,147,207,147,223,147,0,208,0,208,0,208,205,183,222,183,128,145,73,1,144,145,74,1,160,145,75,1,176,145,76,1,1,150,161,29,177,29,133,48,145,5,161,5,177,5,8,240,161,192,128,147,73,1,144,147,74,1,160,147,75,1,176,147,76,1,192,144,0,1,208,144,1,1,224,144,2,1,240,144,3,1,167,1,150,1,96,145,13,2,112,145,14,2,128,145,15,2,144,145,16,2,7,212,136,35,65,240,192,146,13,2,208,146,14,2,224,146,15,2,240,146,16,2,110,224,112,224,128,224,144,224,41,223,144,147,12,2,128,147,11,2,67,224,80,224,190,1,107,95,127,79,15,223,109,129,126,129,144,224,128,224,237,211,32,145,8,1,48,145,9,1,64,145,10,1,80,145,11,1,154,212,32,145,12,1,48,145,13,1,64,145,14,1,80,145,15,1,145,212,105,131,122,131,139,131,156,131,192,144,4,1,208,144,5,1,224,144,6,1,240,144,7,1,167,1,150,1,96,145,1,2,112,145,2,2,128,145,3,2,144,145,4,2,192,211,136,35,65,240,192,146,1,2,208,146,2,2,224,146,3,2,240,146,4,2,111,224,112,224,128,224,144,224,226,222,144,147,0,2,128,147,255,1,67,224,80,224,190,1,107,95,127,79,200,222,2,227,18,224,45,227,50,224,76,227,82,224,107,227,114,224,206,1,1,150,243,209,96,145,59,2,139,224,65,223,96,145,60,2,130,224,61,223,96,145,61,2,135,224,57,223,38,150,15,182,248,148,222,191,15,190,205,191,223,145,207,145,31,145,15,145,255,144,239,144,223,144,207,144,8,149,16,146,73,1,16,146,74,1,16,146,75,1,16,146,76,1,94,207,97,224,128,145,49,2,129,17,96,224,96,147,49,2,141,224,24,207,175,146,191,146,207,146,223,146,239,146,255,146,31,147,207,147,223,147,105,227,114,224," Frequency="16 MHz" Program="controller_arduino.hex" Auto_Load="true" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="-1512,-956" />
+
+<item itemtype="Node" CircId="Node-27" mainComp="false" Pos="-1512,-980" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="-1512,-1012" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Led-3-lPin" endpinid="Uno-2-13" pointList="-1396,-956,-1356,-956" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Led-6-lPin" endpinid="Uno-2-11" pointList="-1396,-980,-1372,-980,-1372,-972,-1356,-972" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Led-12-lPin" endpinid="Uno-2-2" pointList="-1396,-1052,-1356,-1052" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Led-14-lPin" endpinid="Uno-2-7" pointList="-1396,-1012,-1356,-1012" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-16-rPin" endpinid="Led-12-rPin" pointList="-1456,-1052,-1428,-1052" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Resistor-17-rPin" endpinid="Led-14-rPin" pointList="-1456,-1012,-1428,-1012" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Resistor-8-rPin" endpinid="Led-6-rPin" pointList="-1456,-980,-1428,-980" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Resistor-10-rPin" endpinid="Led-3-rPin" pointList="-1456,-956,-1428,-956" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Uno-2-GND2" endpinid="Node-30-0" pointList="-1356,-948,-1388,-948,-1388,-916,-1512,-916,-1512,-956" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Resistor-17-lPin" endpinid="Node-24-1" pointList="-1488,-1012,-1512,-1012" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-24-2" endpinid="Resistor-16-lPin" pointList="-1512,-1012,-1512,-1052,-1488,-1052" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Resistor-8-lPin" endpinid="Node-27-1" pointList="-1488,-980,-1512,-980" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Node-27-2" endpinid="Node-24-0" pointList="-1512,-980,-1512,-1012" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Resistor-10-lPin" endpinid="Node-30-1" pointList="-1488,-956,-1512,-956" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Node-30-2" endpinid="Node-27-0" pointList="-1512,-956,-1512,-980" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="Voltage Source-33-outPin" endpinid="Uno-2-A1" pointList="-1072,-1052,-1084,-1068,-1084,-1036,-1212,-1036" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="Voltage Source-32-outPin" endpinid="Uno-2-A0" pointList="-960,-1052,-972,-1068,-968,-1068,-968,-1028,-1212,-1028" />
+
+</circuit>
