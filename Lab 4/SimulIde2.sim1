@@ -1,7 +1,7 @@
 <circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
 <item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="840,588" rotation="0" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
-<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Git/PoliTO/MBSD/Lab 4/Example/controller_arduino.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
 </item>
 
 <item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="1224,824" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
@@ -30,7 +30,7 @@
 
 <item itemtype="Voltage Source" CircId="Voltage Source-56" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="484,740" rotation="0" hflip="1" vflip="1" label="Voltage Source-56" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="5 V" MaxValue="5 V" />
 
-<item itemtype="Voltage Source" CircId="Voltage Source-57" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="488,616" rotation="0" hflip="1" vflip="1" label="Voltage Source-57" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="1.665 V" MaxValue="5 V" />
+<item itemtype="Voltage Source" CircId="Voltage Source-57" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="488,616" rotation="0" hflip="1" vflip="1" label="Voltage Source-57" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="0.25 V" MaxValue="5 V" />
 
 <item itemtype="TextComponent" CircId="TextComponent-59" mainComp="false" Show_id="false" Show_Val="false" Pos="540,592" rotation="0" hflip="1" vflip="1" label="TextComponent-59" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _Pixels" Border="1 _Pixels" Opacity="1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="true" Text="Pedal" />
 
