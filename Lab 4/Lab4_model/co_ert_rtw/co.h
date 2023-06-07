@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'co'.
  *
- * Model version                  : 5.5
+ * Model version                  : 5.9
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Sat Jun  3 22:38:55 2023
+ * C/C++ source code generated on : Wed Jun  7 12:40:47 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -31,6 +31,8 @@
 
 #include "co_types.h"
 #include "controller.h"
+#include "rtGetInf.h"
+#include "rt_nonfinite.h"
 #include <stddef.h>
 #include "MW_target_hardware_resources.h"
 
@@ -51,7 +53,6 @@
 typedef struct {
   MW_AnalogIn_ResultDataType_Type datatype_id;
   real_T u0;
-  int64_T Gain3;                       /* '<Root>/Gain3' */
   real32_T DataTypeConversion3;        /* '<Root>/Data Type Conversion3' */
 } B_co_T;
 
@@ -92,6 +93,9 @@ struct P_co_T_ {
   real_T Gain1_Gain;                   /* Expression: 1/1023
                                         * Referenced by: '<Root>/Gain1'
                                         */
+  real_T Gain4_Gain;                   /* Expression: 1/204.6
+                                        * Referenced by: '<Root>/Gain4'
+                                        */
   real_T Gain_Gain;                    /* Expression: 1/3
                                         * Referenced by: '<Root>/Gain'
                                         */
@@ -101,26 +105,29 @@ struct P_co_T_ {
   real_T Constant1_Value;              /* Expression: 40
                                         * Referenced by: '<Root>/Constant1'
                                         */
+  real_T Gain2_Gain;                   /* Expression: 2.125
+                                        * Referenced by: '<Root>/Gain2'
+                                        */
   real_T Saturation1_UpperSat;         /* Expression: 255
                                         * Referenced by: '<Root>/Saturation1'
                                         */
   real_T Saturation1_LowerSat;         /* Expression: 0
                                         * Referenced by: '<Root>/Saturation1'
                                         */
-  int64_T Saturation_UpperSat;        /* Computed Parameter: Saturation_UpperSat
-                                       * Referenced by: '<Root>/Saturation'
-                                       */
-  int64_T Saturation_LowerSat;        /* Computed Parameter: Saturation_LowerSat
-                                       * Referenced by: '<Root>/Saturation'
-                                       */
+  real_T Constant4_Value;              /* Expression: 10
+                                        * Referenced by: '<Root>/Constant4'
+                                        */
+  real_T Saturation_UpperSat;          /* Expression: 255
+                                        * Referenced by: '<Root>/Saturation'
+                                        */
+  real_T Saturation_LowerSat;          /* Expression: 0
+                                        * Referenced by: '<Root>/Saturation'
+                                        */
   int32_T Switch_Threshold;            /* Computed Parameter: Switch_Threshold
                                         * Referenced by: '<Root>/Switch'
                                         */
   int32_T Gain3_Gain;                  /* Computed Parameter: Gain3_Gain
                                         * Referenced by: '<Root>/Gain3'
-                                        */
-  real32_T Gain2_Gain;                 /* Computed Parameter: Gain2_Gain
-                                        * Referenced by: '<Root>/Gain2'
                                         */
   boolean_T Delay_InitialCondition;/* Computed Parameter: Delay_InitialCondition
                                     * Referenced by: '<Root>/Delay'

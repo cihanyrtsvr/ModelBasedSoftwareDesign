@@ -2,7 +2,7 @@
 ## Makefile generated for component 'rtwshared'. 
 ## 
 ## Makefile     : rtwshared.mk
-## Generated on : Sat Jun 03 22:39:20 2023
+## Generated on : Wed Jun 07 12:05:47 2023
 ## Final product: ./rtwshared.a
 ## Product type : static library
 ## 
@@ -22,7 +22,7 @@ MAKEFILE                  = rtwshared.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2022b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2022b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/user/Desktop/Example
+START_DIR                 = C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -219,7 +219,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_SKIPFORS
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/slprj/ert/_sharedutils/rtGetInf.c $(START_DIR)/slprj/ert/_sharedutils/rtGetNaN.c $(START_DIR)/slprj/ert/_sharedutils/rt_nonfinite.c $(START_DIR)/slprj/ert/_sharedutils/rt_roundd_snf.c
+SRCS = $(START_DIR)/slprj/ert/_sharedutils/rtGetInf.c $(START_DIR)/slprj/ert/_sharedutils/rtGetNaN.c $(START_DIR)/slprj/ert/_sharedutils/rt_nonfinite.c $(START_DIR)/slprj/ert/_sharedutils/rt_roundd_snf.c $(START_DIR)/slprj/ert/_sharedutils/sLong2MultiWord.c $(START_DIR)/slprj/ert/_sharedutils/sMultiWord2Double.c $(START_DIR)/slprj/ert/_sharedutils/sMultiWordCmp.c $(START_DIR)/slprj/ert/_sharedutils/sMultiWordGt.c $(START_DIR)/slprj/ert/_sharedutils/sMultiWordLt.c $(START_DIR)/slprj/ert/_sharedutils/sMultiWordMul.c
 
 ALL_SRCS = $(SRCS)
 
@@ -227,7 +227,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = rtGetInf.o rtGetNaN.o rt_nonfinite.o rt_roundd_snf.o
+OBJS = rtGetInf.o rtGetNaN.o rt_nonfinite.o rt_roundd_snf.o sLong2MultiWord.o sMultiWord2Double.o sMultiWordCmp.o sMultiWordGt.o sMultiWordLt.o sMultiWordMul.o
 
 ALL_OBJS = $(OBJS)
 
@@ -429,6 +429,30 @@ rt_nonfinite.o : $(START_DIR)/slprj/ert/_sharedutils/rt_nonfinite.c
 
 
 rt_roundd_snf.o : $(START_DIR)/slprj/ert/_sharedutils/rt_roundd_snf.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sLong2MultiWord.o : $(START_DIR)/slprj/ert/_sharedutils/sLong2MultiWord.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sMultiWord2Double.o : $(START_DIR)/slprj/ert/_sharedutils/sMultiWord2Double.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sMultiWordCmp.o : $(START_DIR)/slprj/ert/_sharedutils/sMultiWordCmp.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sMultiWordGt.o : $(START_DIR)/slprj/ert/_sharedutils/sMultiWordGt.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sMultiWordLt.o : $(START_DIR)/slprj/ert/_sharedutils/sMultiWordLt.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+sMultiWordMul.o : $(START_DIR)/slprj/ert/_sharedutils/sMultiWordMul.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

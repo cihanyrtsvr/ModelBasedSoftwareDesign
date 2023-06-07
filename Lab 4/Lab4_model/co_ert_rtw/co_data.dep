@@ -1,6 +1,7 @@
-co_data.o: C:/Users/user/Desktop/Example/co_ert_rtw/co_data.c \
- C:/Users/user/Desktop/Example/co_ert_rtw/co.h \
- C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtwtypes.h \
+co_data.o: \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/co_data.c \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/co.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtwtypes.h \
  C:/PROGRA~1/MATLAB/R2022b/simulink/include/rtw_continuous.h \
  C:/PROGRA~1/MATLAB/R2022b/simulink/include/rtw_solver.h \
  C:/PROGRA~1/MATLAB/R2022b/simulink/include/rtw_continuous.h \
@@ -8,22 +9,22 @@ co_data.o: C:/Users/user/Desktop/Example/co_ert_rtw/co_data.c \
  C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/shared/svd/include/MW_SVD.h \
  C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/SUPPOR~1/ARDUIN~2/include/MW_arduino_digitalio.h \
  C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/shared/svd/include/MW_PWM.h \
- C:/Users/user/Desktop/Example/co_ert_rtw/co_types.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/co_types.h \
  C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/shared/svd/include/MW_SVD.h \
- C:/Users/user/Desktop/Example/slprj/ert/controller/controller.h \
- C:/Users/user/Desktop/Example/slprj/ert/controller/controller_types.h \
- C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtGetInf.h \
- C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtwtypes.h \
- C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rt_nonfinite.h \
- C:/Users/user/Desktop/Example/co_ert_rtw/MW_target_hardware_resources.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/controller/controller.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/controller/controller_types.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtGetInf.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtwtypes.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rt_nonfinite.h \
+ C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/MW_target_hardware_resources.h \
  C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h \
  C:/ProgramData/MATLAB/SupportPackages/R2022b/aIDE/hardware/arduino/avr/cores/arduino/Arduino.h \
  C:/ProgramData/MATLAB/SupportPackages/R2022b/aIDE/hardware/arduino/avr/cores/arduino/binary.h \
  C:/ProgramData/MATLAB/SupportPackages/R2022b/aIDE/hardware/arduino/avr/variants/standard/pins_arduino.h
 
-C:/Users/user/Desktop/Example/co_ert_rtw/co.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/co.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtwtypes.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtwtypes.h:
 
 C:/PROGRA~1/MATLAB/R2022b/simulink/include/rtw_continuous.h:
 
@@ -39,21 +40,21 @@ C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/SUPPOR~1/ARDUIN~2/include/MW_a
 
 C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/shared/svd/include/MW_PWM.h:
 
-C:/Users/user/Desktop/Example/co_ert_rtw/co_types.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/co_types.h:
 
 C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/shared/svd/include/MW_SVD.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/controller/controller.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/controller/controller.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/controller/controller_types.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/controller/controller_types.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtGetInf.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtGetInf.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rtwtypes.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rtwtypes.h:
 
-C:/Users/user/Desktop/Example/slprj/ert/_sharedutils/rt_nonfinite.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/slprj/ert/_sharedutils/rt_nonfinite.h:
 
-C:/Users/user/Desktop/Example/co_ert_rtw/MW_target_hardware_resources.h:
+C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1/co_ert_rtw/MW_target_hardware_resources.h:
 
 C:/PROGRA~3/MATLAB/SUPPOR~1/R2022b/toolbox/target/SUPPOR~1/ARDUIN~1/SCHEDU~1/include/arduinoAVRScheduler.h:
 

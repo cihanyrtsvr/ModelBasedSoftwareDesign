@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'co'.
  *
- * Model version                  : 5.5
+ * Model version                  : 5.9
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Sat Jun  3 22:38:55 2023
+ * C/C++ source code generated on : Wed Jun  7 12:40:47 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -64,6 +64,11 @@ P_co_T co_P = {
    */
   0.00097751710654936461,
 
+  /* Expression: 1/204.6
+   * Referenced by: '<Root>/Gain4'
+   */
+  0.0048875855327468231,
+
   /* Expression: 1/3
    * Referenced by: '<Root>/Gain'
    */
@@ -79,6 +84,11 @@ P_co_T co_P = {
    */
   40.0,
 
+  /* Expression: 2.125
+   * Referenced by: '<Root>/Gain2'
+   */
+  2.125,
+
   /* Expression: 255
    * Referenced by: '<Root>/Saturation1'
    */
@@ -89,15 +99,20 @@ P_co_T co_P = {
    */
   0.0,
 
-  /* Computed Parameter: Saturation_UpperSat
-   * Referenced by: '<Root>/Saturation'
+  /* Expression: 10
+   * Referenced by: '<Root>/Constant4'
    */
-  (8556380160LL),
+  10.0,
 
-  /* Computed Parameter: Saturation_LowerSat
+  /* Expression: 255
    * Referenced by: '<Root>/Saturation'
    */
-  (0LL),
+  255.0,
+
+  /* Expression: 0
+   * Referenced by: '<Root>/Saturation'
+   */
+  0.0,
 
   /* Computed Parameter: Switch_Threshold
    * Referenced by: '<Root>/Switch'
@@ -108,11 +123,6 @@ P_co_T co_P = {
    * Referenced by: '<Root>/Gain3'
    */
   1711276032,
-
-  /* Computed Parameter: Gain2_Gain
-   * Referenced by: '<Root>/Gain2'
-   */
-  0.470588237F,
 
   /* Computed Parameter: Delay_InitialCondition
    * Referenced by: '<Root>/Delay'

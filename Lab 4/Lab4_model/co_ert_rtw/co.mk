@@ -2,7 +2,7 @@
 ## Makefile generated for component 'co'. 
 ## 
 ## Makefile     : co.mk
-## Generated on : Sat Jun 03 22:39:28 2023
+## Generated on : Wed Jun 07 12:05:56 2023
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/co.elf
 ## Product type : executable
 ## 
@@ -21,7 +21,7 @@ MAKEFILE                  = co.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2022b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2022b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/user/Desktop/Example
+START_DIR                 = C:/Users/user/Desktop/CIHANP~1/2E2B9~1.YEA/MODEL-~1/2023/Labs/LAB4~1/LAB4_M~1
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0

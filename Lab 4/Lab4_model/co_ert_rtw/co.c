@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'co'.
  *
- * Model version                  : 5.5
+ * Model version                  : 5.9
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Sat Jun  3 22:38:55 2023
+ * C/C++ source code generated on : Wed Jun  7 12:40:47 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -18,8 +18,9 @@
  */
 
 #include "co.h"
-#include "rt_roundd_snf.h"
 #include <math.h>
+#include "rt_nonfinite.h"
+#include "rt_roundd_snf.h"
 #include "rtwtypes.h"
 #include "co_types.h"
 #include "co_private.h"
@@ -104,11 +105,24 @@ void co_step(void)
   MW_AnalogInSingle_ReadResult(co_DW.obj_h.AnalogInDriverObj.MW_ANALOGIN_HANDLE,
     &b_varargout_1, co_B.datatype_id);
 
+  /* DataTypeConversion: '<Root>/Data Type Conversion' incorporates:
+   *  DataTypeConversion: '<Root>/Cast To Double1'
+   *  Gain: '<Root>/Gain4'
+   *  MATLABSystem: '<Root>/Analog Input1'
+   *  Rounding: '<Root>/Floor'
+   */
+  co_B.u0 = floor(co_P.Gain4_Gain * (real_T)b_varargout_1);
+  if (rtIsNaN(co_B.u0) || rtIsInf(co_B.u0)) {
+    co_B.u0 = 0.0;
+  } else {
+    co_B.u0 = fmod(co_B.u0, 4.294967296E+9);
+  }
+
   /* DataTypeConversion: '<Root>/Data Type Conversion1' incorporates:
    *  DataTypeConversion: '<Root>/Data Type Conversion'
-   *  MATLABSystem: '<Root>/Analog Input1'
    */
-  rtb_DataTypeConversion1 = (TransmissionState)b_varargout_1;
+  rtb_DataTypeConversion1 = (TransmissionState)(co_B.u0 < 0.0 ? -(int32_T)
+    (uint32_T)-co_B.u0 : (int32_T)(uint32_T)co_B.u0);
 
   /* MATLABSystem: '<Root>/Analog Input2' */
   if (co_DW.obj.SampleTime != co_P.AnalogInput2_SampleTime) {
@@ -172,11 +186,11 @@ void co_step(void)
   obj_0 = &co_DW.obj_e0;
   obj_0->PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(3UL);
 
-  /* Sum: '<Root>/Add1' incorporates:
+  /* Gain: '<Root>/Gain2' incorporates:
    *  Constant: '<Root>/Constant1'
-   *  Gain: '<Root>/Gain2'
+   *  Sum: '<Root>/Add1'
    */
-  co_B.u0 = co_P.Gain2_Gain * rtb_Model_o1 - co_P.Constant1_Value;
+  co_B.u0 = (rtb_Model_o1 + co_P.Constant1_Value) * co_P.Gain2_Gain;
 
   /* Saturate: '<Root>/Saturation1' */
   if (co_B.u0 > co_P.Saturation1_UpperSat) {
@@ -191,29 +205,30 @@ void co_step(void)
   MW_PWM_SetDutyCycle(co_DW.obj_e0.PWMDriverObj.MW_PWM_HANDLE, fmax(fmin(co_B.u0,
     255.0), 0.0));
 
-  /* Gain: '<Root>/Gain3' incorporates:
-   *  DataTypeConversion: '<Root>/Data Type Conversion4'
-   */
-  co_B.Gain3 = co_P.Gain3_Gain * (int64_T)rtb_AutomaticTransmissionState;
-
   /* MATLABSystem: '<Root>/PWM1' */
   obj_0 = &co_DW.obj_g;
   obj_0->PWMDriverObj.MW_PWM_HANDLE = MW_PWM_GetHandle(9UL);
 
-  /* Saturate: '<Root>/Saturation' incorporates:
+  /* Sum: '<Root>/Add2' incorporates:
+   *  Constant: '<Root>/Constant4'
+   *  DataTypeConversion: '<Root>/Data Type Conversion4'
    *  Gain: '<Root>/Gain3'
    */
-  if (co_B.Gain3 > co_P.Saturation_UpperSat) {
-    co_B.Gain3 = co_P.Saturation_UpperSat;
-  } else if (co_B.Gain3 < co_P.Saturation_LowerSat) {
-    co_B.Gain3 = co_P.Saturation_LowerSat;
+  co_B.u0 = (real_T)(co_P.Gain3_Gain * (int64_T)rtb_AutomaticTransmissionState) *
+    2.9802322387695312E-8 + co_P.Constant4_Value;
+
+  /* Saturate: '<Root>/Saturation' */
+  if (co_B.u0 > co_P.Saturation_UpperSat) {
+    co_B.u0 = co_P.Saturation_UpperSat;
+  } else if (co_B.u0 < co_P.Saturation_LowerSat) {
+    co_B.u0 = co_P.Saturation_LowerSat;
   }
 
   /* MATLABSystem: '<Root>/PWM1' incorporates:
    *  Saturate: '<Root>/Saturation'
    */
-  MW_PWM_SetDutyCycle(co_DW.obj_g.PWMDriverObj.MW_PWM_HANDLE, fmax(fmin((real_T)
-    co_B.Gain3 * 2.9802322387695312E-8, 255.0), 0.0));
+  MW_PWM_SetDutyCycle(co_DW.obj_g.PWMDriverObj.MW_PWM_HANDLE, fmax(fmin(co_B.u0,
+    255.0), 0.0));
   if (co_M->Timing.TaskCounters.TID[1] == 0) {
     /* Logic: '<Root>/NOT' incorporates:
      *  Delay: '<Root>/Delay'
@@ -232,6 +247,11 @@ void co_step(void)
 /* Model initialize function */
 void co_initialize(void)
 {
+  /* Registration code */
+
+  /* initialize non-finites */
+  rt_InitInfAndNaN(sizeof(real_T));
+
   /* Model Initialize function for ModelReference Block: '<Root>/Model' */
   controller_initialize(rtmGetErrorStatusPointer(co_M),
                         &(co_DW.Model_InstanceData.rtm));
