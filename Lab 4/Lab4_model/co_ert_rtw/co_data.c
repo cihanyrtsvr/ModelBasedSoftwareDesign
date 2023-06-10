@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'co'.
  *
- * Model version                  : 5.9
+ * Model version                  : 5.11
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed Jun  7 12:40:47 2023
+ * C/C++ source code generated on : Sat Jun 10 09:43:38 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -59,10 +59,10 @@ P_co_T co_P = {
    */
   0.0,
 
-  /* Expression: 1/1023
+  /* Expression: 1/921
    * Referenced by: '<Root>/Gain1'
    */
-  0.00097751710654936461,
+  0.0010857763300760044,
 
   /* Expression: 1/204.6
    * Referenced by: '<Root>/Gain4'

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'co'.
  *
- * Model version                  : 5.9
+ * Model version                  : 5.11
  * Simulink Coder version         : 9.8 (R2022b) 13-May-2022
- * C/C++ source code generated on : Wed Jun  7 12:40:47 2023
+ * C/C++ source code generated on : Sat Jun 10 09:43:38 2023
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Atmel->AVR
@@ -90,7 +90,7 @@ struct P_co_T_ {
   real_T Constant3_Value;              /* Expression: 0
                                         * Referenced by: '<Root>/Constant3'
                                         */
-  real_T Gain1_Gain;                   /* Expression: 1/1023
+  real_T Gain1_Gain;                   /* Expression: 1/921
                                         * Referenced by: '<Root>/Gain1'
                                         */
   real_T Gain4_Gain;                   /* Expression: 1/204.6
